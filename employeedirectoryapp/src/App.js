@@ -6,19 +6,24 @@ import axios from 'axios';
 //import API from "../utils/API"; 
 
 class App extends Component {
-  //state = {}
+  state = {
+    employees: [ ]
+  }
 
   componentDidMount() {
-    axios.get('https://randomuser.me/api/?results=100?format=PrettyJSON')
+    axios.get('https://randomuser.me/api/?results=50')
     .then(res => {
-      console.log(res)
+      //console.log(res)
+      this.setState({
+        employees: res.data.results
+      })
     })
   }
   
   render(){
     return(
       <Wrapper>
-        <Title>Employee Directory</Title>
+        <Title>Employee Directory {console.log(this.state)}</Title>
         <EmployeeInfo> test </EmployeeInfo>
       </Wrapper>
     )
