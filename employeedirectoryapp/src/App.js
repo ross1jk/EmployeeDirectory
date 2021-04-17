@@ -23,8 +23,19 @@ class App extends Component {
   render(){
     return(
       <Wrapper>
-        <Title>Employee Directory {console.log(this.state)}</Title>
-        <EmployeeInfo> test </EmployeeInfo>
+        <Title>Employee Directory {console.log(this.state.employees)}</Title>
+        {this.state.employees.map(employees => ( 
+        
+       <EmployeeInfo
+        pic={employees.picture.medium}
+        nameLast={employees.name.last}
+        nameFirst={employees.name.first}
+        email={employees.email}
+        city={employees.location.city}
+        state={employees.location.state}
+        />
+        ))}
+
       </Wrapper>
     )
   }

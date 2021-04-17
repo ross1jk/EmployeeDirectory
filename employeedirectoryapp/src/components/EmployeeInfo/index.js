@@ -18,10 +18,10 @@ function EmployeeInfo(props) {
   <tbody>
 
     <tr>
-      <td>pic</td>
-      <td>Jacqui Ross</td>
-      <td>jross135</td>
-      <td>Royal Oak, Mi</td>
+      <td><img src={props.pic} alt="employee" /></td>
+      <td>{props.nameLast}, {props.nameFirst}</td>
+      <td>{props.email}</td>
+      <td>{props.city}, {props.state}</td>
     </tr>
 
   </tbody>
