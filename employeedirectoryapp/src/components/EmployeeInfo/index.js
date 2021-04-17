@@ -1,6 +1,6 @@
 import React from "react"; 
 
-function EmployeeInfo(props){
+function EmployeeInfo(props) {
   return(
     <div>
   <p>{props.children}</p> 
@@ -29,7 +29,6 @@ function EmployeeInfo(props){
 </table>
 </div>
   );
-
-}
+  }
 
 export default EmployeeInfo; 
