@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import EmployeeInfo from "../EmployeeInfo/index";
 import axios from "axios";
+import "./style.css"
 
 class EmployeeTable extends Component {
     state = {
