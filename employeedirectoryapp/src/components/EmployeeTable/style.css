@@ -1,3 +1,6 @@
-td{
-    width: 25%;
+th{
+    width: 20%;
+    vertical-align: inherit;
+    margin-right: auto;
+    margin-left: auto;
 }

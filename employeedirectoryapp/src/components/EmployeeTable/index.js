@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import EmployeeInfo from "../EmployeeInfo/index";
+import Search from "../Search/index"
 import axios from "axios";
 import "./style.css"
 
@@ -19,6 +20,7 @@ class EmployeeTable extends Component {
     render() {
     return(
     <div>
+    <Search />
     <table className="table">
     <thead>
     <tr>

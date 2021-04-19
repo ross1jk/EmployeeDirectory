@@ -1,3 +1,4 @@
-th{
-    width: 25%;
+td{
+    width: 20%;
+    vertical-align: inherit;
 }
