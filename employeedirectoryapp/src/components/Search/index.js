@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import "./style.css"
 
 function Search(props) {
+  console.log(props)
   return (
     <div>
       <button
