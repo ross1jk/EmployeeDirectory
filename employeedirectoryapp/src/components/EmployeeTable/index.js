@@ -2,7 +2,6 @@ import EmployeeInfo from "../EmployeeInfo/index";
 import "./style.css";
 import React, { Component } from "react";
 import API from "../../utils/API";
-import Search from "../Search";
 
 class EmployeeTable extends Component {
   state = {
@@ -30,11 +29,10 @@ class EmployeeTable extends Component {
       }
     }
 
-    handleState = () => {
+    handleStateInput = () => {
       const choice = document.getElementById("stateInput"); 
       const data = this.state.employees; 
-      let filtered = data.filter(employee => employee.location.state === choice.value)
-      console.log(filtered); 
+      return this.setState({ employees: data.filter(employee => employee.location.state === choice.value) })
     }
   
   render() {
@@ -54,10 +52,10 @@ class EmployeeTable extends Component {
 
               <th scope="col">
 
-              <div class="input-group mb-3">
-              <input id="stateInput" type="text" class="form-control" placeholder="Location" aria-label="Recipient's username" aria-describedby="button-addon2" />
-              <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick={this.handleState}>Button</button>
+              <div className="input-group mb-3">
+              <input id="stateInput" type="text" className="form-control" placeholder="Location" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <div className="input-group-append">
+              <button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={this.handleStateInput}>Button</button>
               </div>
               </div>
 
@@ -67,6 +65,7 @@ class EmployeeTable extends Component {
             </tr>
           </thead>
           <tbody>
+          
             {this.state.employees.map((employees) => (
               <EmployeeInfo
                 pic={employees.picture.medium}
@@ -77,6 +76,7 @@ class EmployeeTable extends Component {
                 state={employees.location.state}
               />
             ))}
+          
           </tbody>
         </table>
       </div>
