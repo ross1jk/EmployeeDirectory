@@ -19,8 +19,14 @@ class EmployeeTable extends Component {
     const sort = event.target.value;
     const data = this.state.employees
     if(sort === "A-Z"){
-
-      console.log(data)
+      data.sort(function(a, b) {
+        if(a.name.last.toLowerCase() < b.name.last.toLowerCase()) return -1; 
+        if(a.name.last.toLowerCase() > b.name.last.toLowerCase()) return 1; 
+        return 0; 
+      })
+      this.setState({
+        employees: data
+      })
       }
     }
   
