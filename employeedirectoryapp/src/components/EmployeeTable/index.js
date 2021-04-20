@@ -33,8 +33,8 @@ class EmployeeTable extends Component {
     handleState = () => {
       const choice = document.getElementById("stateInput"); 
       const data = this.state.employees; 
-      console.log(choice.value)
-      
+      let filtered = data.filter(employee => employee.location.state === choice.value)
+      console.log(filtered); 
     }
   
   render() {
