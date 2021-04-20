@@ -1,19 +1,10 @@
-import React, { Component } from "react";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-//import API from "../utils/API";
-import EmployeeTable from "./components/EmployeeTable"
+import React from "react";
+import EmployeeDirectory from "./pages/EmployeeDirectory"
 
-class App extends Component {
-
-  render() {
-    return (
-      <Wrapper>
-        <Title>Employee Directory</Title>
-        <EmployeeTable />
-      </Wrapper>
-    );
-  }
+function App(){
+  return(
+    <EmployeeDirectory />
+  )
 }
 
 export default App;

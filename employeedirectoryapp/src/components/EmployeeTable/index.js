@@ -16,7 +16,17 @@ class EmployeeTable extends Component {
         });
       });
     }
-    
+
+    // handleInputChange = event => {
+    //   this.setState({ employees: event.target.value });
+    // };
+
+  //   handleFormSubmit = event => {
+  //   event.preventDefault();
+  //   API.getEmployee(this.state.search)
+  // };
+ 
+
     render() {
     return(
     <div>
@@ -25,7 +35,7 @@ class EmployeeTable extends Component {
     <thead>
     <tr>
       <th scope="col">Picture</th>
-      <th scope="col">Name</th>
+      <th scope="col">Name </th>
       <th scope="col">Email</th>
       <th scope="col">Location</th>
     </tr>
