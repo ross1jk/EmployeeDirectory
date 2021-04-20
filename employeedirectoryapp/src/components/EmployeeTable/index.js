@@ -17,7 +17,7 @@ class EmployeeTable extends Component {
 
   handleSort = (event) => {
     const sort = event.target.value;
-    const data = this.state.employees
+    const data = this.state.employees; 
     if(sort === "A-Z"){
       data.sort(function(a, b) {
         if(a.name.last.toLowerCase() < b.name.last.toLowerCase()) return -1; 
@@ -28,6 +28,13 @@ class EmployeeTable extends Component {
         employees: data
       })
       }
+    }
+
+    handleState = () => {
+      const choice = document.getElementById("stateInput"); 
+      const data = this.state.employees; 
+      console.log(choice.value)
+      
     }
   
   render() {
@@ -44,7 +51,19 @@ class EmployeeTable extends Component {
                </select>
                </th>
               <th scope="col">Email</th>
-              <th scope="col">Location</th>
+
+              <th scope="col">
+
+              <div class="input-group mb-3">
+              <input id="stateInput" type="text" class="form-control" placeholder="Location" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" onClick={this.handleState}>Button</button>
+              </div>
+              </div>
+
+
+              </th>
+
             </tr>
           </thead>
           <tbody>
