@@ -23,6 +23,7 @@ function Filters(props) {
           placeholder="Search by (First) Name"
           aria-describedby="button-addon2"
         />
+
         <div className="input-group-append">
           <button
             className="btn"
@@ -43,6 +44,7 @@ function Filters(props) {
           placeholder="Search by (Last) Name"
           aria-describedby="button-addon2"
         />
+
         <div className="input-group-append">
           <button
             className="btn"

@@ -59,12 +59,14 @@ class EmployeeDirectory extends Component {
       results: data.filter((employee) => employee.name.last === choice.value),
     });
   };
-
+  
   render() {
     return (
       <div>
         <Title>Employee Directory</Title>
+
         <Wrapper>
+
           <Filters
             handleSort={this.handleSort}
             handleStateInput={this.handleStateInput}
@@ -75,9 +77,11 @@ class EmployeeDirectory extends Component {
           <StateSearch employees={this.state.results} />
 
           <EmployeeTable employees={this.state.employees} />
+
         </Wrapper>
       </div>
     );
   }
 }
+
 export default EmployeeDirectory;
