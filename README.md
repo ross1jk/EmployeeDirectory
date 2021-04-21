@@ -4,9 +4,9 @@
   
 ## Description
 
-As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+In this Employee Directory application, an employee or manager is able to view the entire employee directory at once so they have quick access to their information.
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+The user is able to view non-sensitive data about other employees. With the option to sort employees alphabetically, and search by first name, last name or state.
 
 ## Tableof Contents
 
@@ -18,23 +18,37 @@ An employee or manager would benefit greatly from being able to view non-sensiti
   
 ## Deployed_Application
 
-To access this deployed application, visit the following link: [Budget Tracker Application](https://budgettrackerjr.herokuapp.com/)
+To access this deployed application, visit the following link: [Employee Directory](https://ross1jk.github.io/EmployeeDirectory/)
 
 ## Usage
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+This Employee Directory utilizes React. This application is broken up into components and within those componets the state is managed and responds to user events.
 
-Given a table of random users generated from the [Random User API](https://randomuser.me/), when the user loads the page, a table of employees should render. 
+This application utilzies [Random User API](https://randomuser.me/) to render a table of random users on page load. When a user enters a search term then, that search result will render above the complete list of employees.
 
-The user should be able to:
-
-  * Sort the table by at least one category
-
-  * Filter the users by at least one property.
+The user is able to: Sort employees alphabetically and filter employees by first name, last name, or state.
 
 ## Mock-Up
 
-![MockUp](public/images/mockup.png)
+### Home Page
+
+![Home](/images/home.png)
+
+### Sort Alphabetically
+
+![Alpah](/images/alphabeticalSort.png)
+
+### Sort by First Name
+
+![First](/images/sortFirstName.png)
+
+### Sort by Last Name
+
+![Last](/images/sortLastName.png)
+
+### Sort by State
+
+![State](/images/stateSort.png)
 
 ## License
 
@@ -46,7 +60,3 @@ Please reach out to me with any additional questions by contacting me.
 
 * GitHub Profile: [ross1jk](https://github.com/ross1jk)
 * My Email Address: [Jacqueline.ross09@gmail.com](jacqueline.ross09@gmail.com)
-
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
-
-* **Important**: Be sure to push your codebase to GitHub and **NOT** your built and deployed code. Ensure this happens by following the above instructions and using the `gh-pages` branch to host the deployed application's code.
