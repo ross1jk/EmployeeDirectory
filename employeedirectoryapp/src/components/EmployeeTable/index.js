@@ -1,7 +1,6 @@
 import EmployeeInfo from "../EmployeeInfo/index";
 import "./style.css";
-import React, { Component } from "react";
-import API from "../../utils/API";
+import React from "react";
 
 function EmployeeTable(props) {
 return (

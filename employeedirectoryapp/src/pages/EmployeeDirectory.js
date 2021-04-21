@@ -3,6 +3,7 @@ import API from "../utils/API"
 import Wrapper from "../components/Wrapper";
 import Title from "../components/Title";
 import EmployeeTable from "../components/EmployeeTable";
+import StateSearch from "../components/StateSearch"
 
 class EmployeeDirectory extends Component {
     state = {
@@ -44,12 +45,16 @@ class EmployeeDirectory extends Component {
       <Title>Employee Directory</Title>
       <Wrapper>
 
+      <StateSearch 
+          employees={this.state.results}
+        />
+        
         <EmployeeTable 
           employees={this.state.employees}
           handleSort={this.handleSort}
           handleStateInput={this.handleStateInput}
         />
-        
+
       </Wrapper>
     </div>
   );
