@@ -1,7 +1,9 @@
-.title {
-  width: 100%;
+.jumbotron{
   text-align: center;
-  font-size: 3rem;
-  color: pink;
-  margin-bottom: 50px;
+  color: #6795a0;
+  background-color: #375a63 !important;
+}
+
+body {
+  background-color: #F4EFE6;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 function Filters(props) {
   return (
@@ -19,7 +20,7 @@ function Filters(props) {
               />
               <div className="input-group-append">
                 <button
-                  className="btn btn-outline-secondary"
+                  className="btn"
                   type="button"
                   id="button-addon2"
                   onClick={props.handleStateInput}

@@ -7,3 +7,7 @@
   align-content: flex-start;
   overflow: auto;
 }
+
+body {
+  background-color: #F4EFE6;
+}

@@ -1,0 +1,12 @@
+select{
+    font-size: 20px;
+}
+
+button{
+    color: white !important;
+    background-color: #478999 !important;
+}
+
+body {
+    background-color: #F4EFE6;
+}

@@ -1,4 +1,8 @@
-td{
+td {
     width: 20%;
     vertical-align: inherit;
+}
+
+body {
+    background-color: #F4EFE6;
 }
