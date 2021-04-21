@@ -6,7 +6,7 @@ function Title(props) {
   <div>
     <div class="jumbotron">
     <div class="row">
-    <img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
+    <img id="logo" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
         <h1 class="display-4">{props.children}</h1>
         </div>
     </div>

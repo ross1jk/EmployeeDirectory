@@ -20,7 +20,7 @@ function Filters(props) {
           id="nameInput"
           type="text"
           className="form-control"
-          placeholder="Search (First) Name"
+          placeholder="Search by (First) Name"
           aria-describedby="button-addon2"
         />
         <div className="input-group-append">
@@ -37,10 +37,30 @@ function Filters(props) {
 
       <div className="input-group mb-3">
         <input
+          id="lastNameInput"
+          type="text"
+          className="form-control"
+          placeholder="Search by (Last) Name"
+          aria-describedby="button-addon2"
+        />
+        <div className="input-group-append">
+          <button
+            className="btn"
+            type="button"
+            id="button-addon2"
+            onClick={props.handleLastNameInput}
+          >
+            Search
+          </button>
+        </div>
+      </div>
+
+      <div className="input-group mb-3">
+        <input
           id="stateInput"
           type="text"
           className="form-control"
-          placeholder="Search Location"
+          placeholder="Search by State"
           aria-describedby="button-addon2"
         />
         <div className="input-group-append">
