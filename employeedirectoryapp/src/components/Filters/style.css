@@ -1,10 +1,11 @@
-select{
-    font-size: 20px;
-}
-
 button{
     color: white !important;
-    background-color: #478999 !important;
+    background-color: #5f9595 !important;
+    margin-bottom: 5px !important; 
+}
+
+#name{
+    margin-bottom: 20px !important;
 }
 
 body {

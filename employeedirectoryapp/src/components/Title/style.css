@@ -1,9 +1,18 @@
 .jumbotron{
   text-align: center;
-  color: #6795a0;
-  background-color: #375a63 !important;
+  color: white;
+  background-color: #5f9595 !important;
+  justify-content: center;
+
 }
 
-body {
-  background-color: #F4EFE6;
+img{
+  width: 10% !important; 
+  margin-left: auto; 
+  margin-right: 10px; 
+}
+
+h1{
+  font-size: 520% !important;
+  margin-right: auto; 
 }
