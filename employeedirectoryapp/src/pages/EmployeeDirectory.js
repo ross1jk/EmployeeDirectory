@@ -40,6 +40,12 @@ class EmployeeDirectory extends Component {
         return this.setState({ results: data.filter(employee => employee.location.state === choice.value) })
       }
 
+      handleNameInput = () => {
+        const choice = document.getElementById("nameInput"); 
+        const data = this.state.employees; 
+        return this.setState({ results: data.filter(employee => employee.name.first === choice.value) })
+      }
+
   render(){
   return (
     <div>
@@ -49,6 +55,7 @@ class EmployeeDirectory extends Component {
       <Filters 
         handleSort={this.handleSort}
         handleStateInput={this.handleStateInput}
+        handleNameInput={this.handleNameInput}
 
       />
 
