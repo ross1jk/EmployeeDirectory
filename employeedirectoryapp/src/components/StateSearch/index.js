@@ -5,7 +5,6 @@ function StateSearch(props) {
 return (
       <div>
         <table className="table">
-          <tbody>
           
             {props.employees.map((employees) => (
               <EmployeeInfo
@@ -17,8 +16,7 @@ return (
                 state={employees.location.state}
               />
             ))}
-          
-          </tbody>
+
         </table>
       </div>
     );

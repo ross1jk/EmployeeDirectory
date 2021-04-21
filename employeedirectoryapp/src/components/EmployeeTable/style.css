@@ -1,6 +1,4 @@
-th{
-    width: 20%;
-    vertical-align: inherit;
-    margin-right: auto;
-    margin-left: auto;
-}
+thead{
+    display: unset; 
+    text-align: center;
+}   

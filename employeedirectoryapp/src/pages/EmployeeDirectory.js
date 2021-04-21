@@ -4,6 +4,7 @@ import Wrapper from "../components/Wrapper";
 import Title from "../components/Title";
 import EmployeeTable from "../components/EmployeeTable";
 import StateSearch from "../components/StateSearch"
+import Filters from "../components/Filters"
 
 class EmployeeDirectory extends Component {
     state = {
@@ -45,14 +46,18 @@ class EmployeeDirectory extends Component {
       <Title>Employee Directory</Title>
       <Wrapper>
 
+      <Filters 
+        handleSort={this.handleSort}
+        handleStateInput={this.handleStateInput}
+
+      />
+
       <StateSearch 
           employees={this.state.results}
         />
         
         <EmployeeTable 
           employees={this.state.employees}
-          handleSort={this.handleSort}
-          handleStateInput={this.handleStateInput}
         />
 
       </Wrapper>
