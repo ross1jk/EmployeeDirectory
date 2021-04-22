@@ -32,23 +32,23 @@ The user is able to: Sort employees alphabetically and filter employees by first
 
 ### Home Page
 
-![Home](/images/home.png)
+![Home](/public/home.png)
 
 ### Sort Alphabetically
 
-![Alpah](/images/alphabeticalSort.png)
+![Alpah](/public/alphabeticalSort.png)
 
 ### Sort by First Name
 
-![First](/images/sortFirstName.png)
+![First](/public/sortFirstName.png)
 
 ### Sort by Last Name
 
-![Last](/images/sortLastName.png)
+![Last](/public/sortLastName.png)
 
 ### Sort by State
 
-![State](/images/stateSort.png)
+![State](/public/stateSort.png)
 
 ## License
 
