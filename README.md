@@ -40,11 +40,11 @@ The user is able to: Sort employees alphabetically and filter employees by first
 
 ### Sort by First Name
 
-![First](/public/sortFirstName.png)
+![First](/public/sortFirstname.png)
 
 ### Sort by Last Name
 
-![Last](/public/sortLastName.png)
+![Last](/public/sortLastname.png)
 
 ### Sort by State
 
